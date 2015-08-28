@@ -41,7 +41,7 @@ function _cookiestring(c) {
   }
 
   // domain
-  if (c.domain) { x += ('; domain='+c.domain); }
+  // if (c.domain) { x += ('; domain='+c.domain); }
 
   // path
   if (c.path) { x += ('; path='+c.path); }
