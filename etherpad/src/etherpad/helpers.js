@@ -378,8 +378,7 @@ function isHeaderVisible() {
 }
 
 function siteName() {
-
-  return toHTML((pro_config.getConfig() && pro_config.getConfig().siteName) || "hackpad");
+  return toHTML(appjet.config['etherpad.sitename'] || "hackpad");
 }
 
 function siteImage() {
