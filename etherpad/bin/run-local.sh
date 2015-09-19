@@ -92,8 +92,8 @@ echo "Using config file: ${cfg_file}"
 
 exec $JAVA -classpath $CP \
     -server \
-    -Xmx${MXRAM} \
-    -Xms${MXRAM} \
+    -Xmx2048m \
+    -Xms2048m \
     -XX:NewSize=768m \
     -XX:PermSize=256m \
     -XX:MaxPermSize=512m \
