@@ -586,7 +586,8 @@ function render_pin_pad_post(){
     return renderJSONError(403, "Only full members are allowed to pin pads in sites");
   }
   if (domains.isPrimaryDomainRequest()) {
-    return renderJSONError(403, "No pad pinning is allowed on hackpad.com");
+    // not hackpad.com
+    return renderJSONError(403, "No pad pinning is allowed on hackpad.");
   }
   var pinnedURL = "";
   var localPadId = request.params.localPadId;

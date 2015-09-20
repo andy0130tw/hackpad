@@ -433,9 +433,9 @@ function getPadHTMLDocument(pad, revNum, noDocType, removeTitleLine, unescapeCod
       '<meta name="version" content="'+ revNum +'"/>\n'+
       '<style>' +
       'body {font-family:Helvetica}' +
-      'ul.comment{list-style-image:url(\''+ 'https://hackpad.com/static/img/comment.png' +'\');} '+
-      'ul.task{list-style-image:url(\''+ 'https://hackpad.com/static/img/unchecked.png' +'\');}'+
-      'ul.taskdone{list-style-image:url(\''+ 'https://hackpad.com/static/img/checked.png' +'\');} '+
+      'ul.comment{list-style-image:url(\''+ '/static/img/comment.png' +'\');} '+
+      'ul.task{list-style-image:url(\''+ '/static/img/unchecked.png' +'\');}'+
+      'ul.taskdone{list-style-image:url(\''+ '/static/img/checked.png' +'\');} '+
       '</style>'+
       '<title>'+'/'+pad.getId()+'</title>\n'+
       '</head>\n')+

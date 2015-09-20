@@ -1,12 +1,12 @@
 /*!
  * Copyright 2009 Google Inc.
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *      http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS-IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -228,7 +228,7 @@ var padchat = (function(){
         var room = roomEl.attr('data-room');
         var thisTabsLastTimeReceivedMessages = chatLastTimeReceivedMessages[room];
         var browserWideLastReadTime = localStorage['chatLastTimeReadMessages_' + room];
-        if (browserWideLastReadTime && thisTabsLastTimeReceivedMessages && 
+        if (browserWideLastReadTime && thisTabsLastTimeReceivedMessages &&
             parseInt(browserWideLastReadTime / 1000) >= parseInt(thisTabsLastTimeReceivedMessages / 1000)) {
           var currentCount = +(roomEl.attr('data-notification-count') || 0);
           roomEl.removeAttr('data-notification-count');
@@ -262,7 +262,7 @@ var padchat = (function(){
 
   if (typeof document.addEventListener !== "undefined" &&
     typeof caps.hidden !== "undefined") {
-    // Handle page visibility change   
+    // Handle page visibility change
     document.addEventListener(caps.visibilityChange, handleVisibilityChange, false);
   }
 
@@ -387,7 +387,7 @@ var padchat = (function(){
             attr('title', clientVars.siteName).
             attr('data-room', 'site').
             append($('<img>').
-                attr('src', 'https://hackpad.com/static/favicon.ico')).
+                attr('src', '/static/favicon.png')).
             append($('<span>').text(clientVars.siteName))
       );
 
@@ -399,7 +399,7 @@ var padchat = (function(){
             attr('title', clientVars.padTitle).
             attr('data-room', 'pad').
             append($('<img>').
-                attr('src', 'https://hackpad.com/static/favicon.ico')).
+                attr('src', '/static/favicon.png')).
             append($('<span>').text(clientVars.padTitle))
       );
       */

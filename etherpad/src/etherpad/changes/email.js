@@ -390,6 +390,7 @@ function _getMessageContext(msg) {
 
   for (var i in referencesIds) {
     // pad+revnum@subdomain.hackpad.com
+    // CAN NOT FIX
     var m = referencesIds[i].match(/<(\w+)\+(\w+)@((\w+)\.)?hackpad\.com>/);
     if (m) {
       if (m[4]) {
