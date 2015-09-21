@@ -471,7 +471,7 @@ function facebookOpenGraphMetadata(pageArgs) {
 
 function addDefaultMetadata() {
   // not knowing if this value is correct
-  addToHead("<meta content='" + helpers.siteName + "' name='title' />");
+  addToHead("<meta content='" + siteName() + "' name='title' />");
   addToHead("<meta content='Real-time collaborative wiki' name='description' />");
   addToHead("<link href='/static/img/hackpad-logo.png' rel='image_src' />");
 }
